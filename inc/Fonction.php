@@ -3,7 +3,7 @@
   {
       $users='itu';
       $pass='itu';
-      $port=90;
+      $port=3306;
       $host='192.168.1.109';
       $dbname='master';
       $dsn='mysql:host='.$host.';port='.$port.';dbname='.$dbname;      	
