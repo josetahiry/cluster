@@ -1,4 +1,5 @@
 <?php
+
 	require('fonction.php');
 	$pseud = $_GET['insertpseudo'];
 	$age = $_GET['inputage'];
