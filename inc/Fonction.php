@@ -1,11 +1,11 @@
 <?php
     function getConnexion()
   {
-      $users='root';
-      $pass='root';
-      $port=3306;
-      $host='localhost';
-      $dbname='venteonline';
+      $users='itu';
+      $pass='itu';
+      $port=90;
+      $host='192.168.1.109';
+      $dbname='master';
       $dsn='mysql:host='.$host.';port='.$port.';dbname='.$dbname;      	
 	try {
 				
