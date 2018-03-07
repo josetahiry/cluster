@@ -23,6 +23,7 @@ if(isset($_SESSION["login"]))
 
     <!-- Navigation -->
 <?php
+echo getServerId();
 include('../inc/nav.php');
 ?>
 

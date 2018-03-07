@@ -17,6 +17,23 @@
 		die();
 		}
   }
+
+function getServerId(){
+  try{
+    $req="SELECT @@server_id as id";
+    $liste;
+    $con=getConnexion();
+    $res2=$con->query($req);
+    $res2->setFetchMode(PDO::FETCH_OBJ);
+    while($ligne = $res2->fetch()){
+        $liste=$ligne->id;
+    }
+    return $liste;
+  }catch (Exception $ex) {
+    echo ($ex->getMessage());
+  } 
+}
+
 function getTypeByArticle($art)
 {
      try
