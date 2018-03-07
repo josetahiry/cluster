@@ -2,7 +2,6 @@
 require('../inc/connection.php');
 require('../inc/session.php');
 session_start();
-echo "Jose";
 ini_set('session.save_handler', 'user');//on définit l'utilisation des sessions en personnel
 session_set_save_handler( 'open','close','read','write','destroy','gc');//on précise les méthodes à employer pour les sessions*/
 ?>
