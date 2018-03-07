@@ -6,7 +6,7 @@
       $port=3306;
       $host='192.168.1.121';
       $dbname='master';
-      $dsn='mysql:host='.$host.';port='.$port.';dbname='.$dbname;      	
+      $dsn='mysql:host='.$host.':'.$port.';dbname='.$dbname;      	
 	try {
 				
 		$dbh = new PDO($dsn, $users, $pass);
